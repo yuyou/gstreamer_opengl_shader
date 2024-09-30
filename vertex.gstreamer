@@ -1,0 +1,15 @@
+#version 330
+
+#ifdef GL_ES
+   precision mediump float;
+#endif
+
+in vec4 a_position;
+in vec2 a_texcoord;
+out vec2 v_texcoord;
+
+void main()
+{
+   gl_Position = a_position;
+   v_texcoord = a_texcoord;
+}

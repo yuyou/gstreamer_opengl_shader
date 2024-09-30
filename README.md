@@ -3,3 +3,7 @@
 ```
 gst-launch-1.0 gltestsrc is-live=true ! glshader vertex="\"`cat vertex.gstreamer`\"" fragment="\"`cat fragment.gstreamer`\"" ! glimagesink sync=false
 ```
+
+
+The script above works for GStreamer 1.20.*/1.22.*. But 1.22.8 complains errors about the GLSL version (`#version 330`)
+
